@@ -1,3 +1,6 @@
+const math = require("../src/math.js");
+const isEven = math.isEven;
+
 const selectEvenNumbers = function(numbers) {
   const evenNumbers = [];
   for(const number of numbers) {
@@ -18,3 +21,4 @@ const selectOddNumbers = function(numbers) {
   return evenNumbers;
 }
 
+exports.selectEvenNumbers = selectEvenNumbers;
